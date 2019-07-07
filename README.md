@@ -17,9 +17,8 @@ Fitness function is ACO's answer and our goal is to minimize it.
 Also, each parameter has a range (minimum and maximum).  
 PSO gives us the best set of parameters which is then used by ACO to give us the optimum answer (closest to minimum tour cost) and  
 the path.  
-Time complexity: O(iter1*iter2*N*R*A*n^3)  
-iter1: number of times that PSO is executed  
-iter2: number of times that ACO is executed to find fitness of a position  
+Time complexity: O(INRA(n^3))  
+I: number of times that PSO is executed multiplied by number of times that ACO is executed to find fitness of a position  
 N: number of particles (for PSO) and is a multiple of number of cities  
 R: no. of rounds  
 A: no. of ants  
@@ -32,5 +31,5 @@ Results on adjacency matrix on https://people.sc.fsu.edu/~jburkardt/datasets/tsp
     maxRound=5 maxAnts=20 => ans:966   time:110s  
     maxRound=10 maxAnts=20 => ans:796   time:195s  
       
-    iter1=20  
-    maxRound=10 maxAnts=20 => ans:844   time:79s  
+   iter1=20  
+   maxRound=10 maxAnts=20 => ans:844   time:79s  
