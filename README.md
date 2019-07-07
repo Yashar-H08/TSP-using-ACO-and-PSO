@@ -7,7 +7,7 @@ https://github.com/ArazG5
 Algorithm:  
 For this problem, ACO algorithm is used which has the following parameters:  
 alpha: the importance of pheromone level in comparison to length of edge (alpha>1 means that the pheromone level is more important).  
-vaporization: at the end of each round, pheromone levels are lowered by vaporization.  The higher this parameter is, the less vaporization.  
+vaporization rate: at the end of each round, pheromone levels are lowered by vaporization.  
 no. of rounds: number of times that all ants will tour the whole graph.  
 no. of ants: number of ants  
   
@@ -19,7 +19,7 @@ PSO gives us the best set of parameters which is then used by ACO to give us the
 the path.  
 Time complexity: O(INRA(n^3))  
 I: number of times that PSO is executed multiplied by number of times that ACO is executed to find fitness of a position  
-N: number of particles (for PSO) and is a multiple of number of cities  
+N: number of particles (for PSO) which is a multiple of number of cities  
 R: no. of rounds  
 A: no. of ants  
 n: number of cities  
