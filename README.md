@@ -1,4 +1,3 @@
-# TSP-with-ACO-and-PSO
 Traveling Salesman Problem using Ant Colony Optimization (with Particle Swarm Optimization for its parameter tuning)
 
 Authors:
