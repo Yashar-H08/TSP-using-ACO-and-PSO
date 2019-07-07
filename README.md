@@ -7,8 +7,8 @@ https://github.com/ArazG5
 Algorithm:  
 For this problem, ACO algorithm is used which has the following parameters:  
 alpha: the importance of pheromone level in comparison to length of edge (alpha>1 means that the pheromone level is more important).  
-1-vaporization: at the end of each round, pheromone levels are lowered by vaporization.  The higher this parameter is, the less vaporization.  
-no. of rounds: number of times that all ants will create a complete tour.  
+vaporization: at the end of each round, pheromone levels are lowered by vaporization.  The higher this parameter is, the less vaporization.  
+no. of rounds: number of times that all ants will tour the whole graph.  
 no. of ants: number of ants  
   
 Finding best set of parameters for ACO is itself an optimization problem which is solved using PSO:  
@@ -24,7 +24,7 @@ R: no. of rounds
 A: no. of ants  
 n: number of cities  
   
-Results on adjacency matrix on https://people.sc.fsu.edu/~jburkardt/datasets/tsp/dantzig42_d.txt (with 42 nodes):  
+Results on adjacency matrix on https://people.sc.fsu.edu/~jburkardt/datasets/tsp/dantzig42_d.txt (with 42 nodes and 699 as the right answer):  
     I=50  
     maxRound=1 maxAnts=1 => ans:2070   time:4s  
     maxRound=10 maxAnts=10 => ans:893   time:102s  
