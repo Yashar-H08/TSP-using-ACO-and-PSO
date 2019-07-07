@@ -25,11 +25,11 @@ A: no. of ants
 n: number of cities  
   
 Results on adjacency matrix on https://people.sc.fsu.edu/~jburkardt/datasets/tsp/dantzig42_d.txt (with 42 nodes):  
-    iter1=50  
+    I=50  
     maxRound=1 maxAnts=1 => ans:2070   time:4s  
     maxRound=10 maxAnts=10 => ans:893   time:102s  
     maxRound=5 maxAnts=20 => ans:966   time:110s  
     maxRound=10 maxAnts=20 => ans:796   time:195s  
       
-   iter1=20  
+   I=20  
    maxRound=10 maxAnts=20 => ans:844   time:79s  
