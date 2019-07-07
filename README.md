@@ -6,10 +6,10 @@ https://github.com/ArazG5
 
 Algorithm:  
 For this problem, ACO algorithm is used which has the following parameters:  
-alpha:  
-vaporization:   
-no. of rounds:  
-no. of ants:  
+alpha: the importance of pheromone level in comparison to length of edge (alpha>1 means that the pheromone level is more important).  
+1-vaporization: at the end of each round, pheromone levels are lowered by vaporization.  The higher this parameter is, the less vaporization.  
+no. of rounds: number of times that all ants will create a complete tour.  
+no. of ants: number of ants  
   
 Finding best set of parameters for ACO is itself an optimization problem which is solved using PSO:  
 a position in PSO is defined as a tuple of size 4 of ACO's parameters. Velocity is defined similarly.  
