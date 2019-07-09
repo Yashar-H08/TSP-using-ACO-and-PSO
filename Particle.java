@@ -33,6 +33,14 @@ public class Particle {
         return min+(max-min)*myRand.nextDouble();
     }
     
+    public static void dbg(String str) {
+        System.out.print(str);
+    }
+//    
+    public static void show(Particle pt) {
+        dbg("alpha:"+pt.alpha+"\nvaporization rate:"+pt.vap+"\nno. of rounds:"+pt.round+"\nno. of ants:"+pt.ants+"\n");
+    }
+    
     public static void copyInto(Particle p, Particle p2) {
         p.alpha=p2.alpha;
         p.vap=p2.vap;
