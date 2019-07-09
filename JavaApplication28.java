@@ -6,7 +6,17 @@ public class JavaApplication28 {
 
     public static void main(String[] args) 
     {
-        
+        Graph G=new Graph();
+        G.getAdj();        
+        PSO pso=new PSO();
+        Particle params=pso.run();
+        ACO aco=new ACO((int)params.alpha,1.0,params.vap,((int)params.ants),((int)params.round));
+        Particle.dbg("Minimum tour cost:\n");
+        System.out.println(aco.Cost(aco));
+        System.out.println("Optimum tour:");
+        System.out.println(aco.GetPath(aco));
+        Particle.dbg("Parameters for optimum ACO:\n");
+        Particle.show(params);
     }
     /*
     Results on adjacency matrix on https://people.sc.fsu.edu/~jburkardt/datasets/tsp/dantzig42_d.txt (with 42 nodes):
