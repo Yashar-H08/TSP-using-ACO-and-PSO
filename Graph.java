@@ -23,33 +23,19 @@ public class Graph
     }
     
     public void getAdj() {
+        System.out.println("Enter N (number of nodes):");
         Scanner input = new Scanner(System.in);
         N = input.nextInt(); // number of nodes
         M=N*N;
+        //S=0;
+        System.out.println("Now enter adjacency matrix entries seperated by space or newline:");
         for(int i=0; i<N; i++)
         {
-            for(int j=0; j<N; j++) adj[i][j]=input.nextDouble();
-        }
-    }
-    
-    public void GetGraph()
-    {
-        Scanner input = new Scanner(System.in);
-        N = input.nextInt(); // number of nodes
-        M = input.nextInt(); // number of edges 
-        
-        for(int i=0;i<N;i++)
-            for(int j=0;j<N;j++)
-                adj[i][j]=inf;
-        
-        for(int i=0;i<M;i++)
-        {
-            int a,b;
-            double c;
-            a = input.nextInt(); // node 1
-            b = input.nextInt(); // node 2
-            c = input.nextDouble(); // distance
-            adj[a][b]=adj[b][a]=c;
+            for(int j=0; j<N; j++) 
+            {  
+                adj[i][j]=input.nextInt();
+                if(i==j) adj[i][j]=10000000;
+            }
         }
     }
     
