@@ -2,7 +2,7 @@ Solving Traveling Salesman Problem using Ant Colony Optimization (with Particle 
 
 Authors:  
 https://github.com/Yashar-H08  
-https://github.com/ArazG5
+https://github.com/ArazShilabin
 
 Algorithm:  
 For this problem, ACO algorithm is used which has the following parameters:  
